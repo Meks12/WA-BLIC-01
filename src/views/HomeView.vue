@@ -5,16 +5,16 @@
     <br />
    
      <ul>
-      <li v-for="item in commits" v-bind:key="item.urlr">
-        Commit <router-link :to ="'/commit/'+item.url"> {{item.url}} </router-link>
-        </li>
+      <li v-for="item in commits" v-bind:key="item.url">
+        Knjige <router-link :to ="'/commit/'+item.url"> {{item.url}} </router-link>
+       </li>
     </ul>
 
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+
 import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
@@ -29,9 +29,6 @@ export default {
 
  async mounted(){
 
- // let rezultat = await fetch("http://cantab.elaclo.com:8000/books.json");
-
-//  let podaci = await rezultat.json();
 
 
 //  fetch('http://cantab.elaclo.com:8000/books.json')
